@@ -107,6 +107,10 @@ div.nav#main table#about-me td.right {
 div.section#side-panel {
   width: 27.7%;
 }
+div.section#side-panel div#recent_posts {
+  overflow-y: scroll;
+  height: 106px;
+}
 div.section#twitter h4 {
   font-size: 15px !important;
 }

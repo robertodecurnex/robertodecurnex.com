@@ -94,16 +94,17 @@
           </table>
           <br />
           <h3>Recent Posts</h3>
-
-          {% for post in site.posts limit:5 %}
-            <p>
-              {% if post.title.size < 27 %}
-                <a href="{{post.url}}" title="{{post.title}}">{{ post.title }}</a>
-              {% else %} 
-                <a href="{{post.url}}" title="{{post.title}}">{{ post.title | truncate: 27 }}</a>
-              {% endif %}
-            </p>
-          {% endfor %}
+          <div id="recent_posts">
+            {% for post in site.posts %}
+              <p>
+                {% if post.title.size < 27 %}
+                  <a href="{{post.url}}" title="{{post.title}}">{{ post.title }}</a>
+                {% else %} 
+                  <a href="{{post.url}}" title="{{post.title}}">{{ post.title | truncate: 27 }}</a>
+                {% endif %}
+              </p>
+            {% endfor %}
+          </div>
           <br />
           <br />
           <h3>Profile</h3>
