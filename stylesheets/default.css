@@ -260,3 +260,15 @@ a.dsq-brlink {
 div.twtr-doc {
   border-radius: 0 !important;
 }
+div#pic44 {
+  margin-right: 30px;
+  float: right;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+div#about {
+  padding: 10px;
+}
