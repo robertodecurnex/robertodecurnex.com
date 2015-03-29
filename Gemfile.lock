@@ -28,6 +28,7 @@ GEM
       rb-inotify (>= 0.9)
       rb-kqueue (>= 0.2)
     maruku (0.7.0)
+    newrelic_rpm (3.11.1.284)
     parslet (1.5.0)
       blankslate (~> 2.0)
     posix-spawn (0.3.10)
@@ -57,5 +58,6 @@ PLATFORMS
 DEPENDENCIES
   RedCloth
   jekyll (< 2)
+  newrelic_rpm
   puma
   rack-jekyll
