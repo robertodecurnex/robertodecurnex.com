@@ -1,0 +1,52 @@
+---
+title: Did you know Ruby? (Unicode and Heredoc Strings)
+disqus_title: Did you know Ruby? (Unicode and Heredoc Strings)
+layout: post
+keywords: ruby, unicode, ruby strings, ruby here document, ruby here document strings
+meta_desc: did you know ruby? (unicode and ruby here documents strings) - having fun with unicode chars and here document strings.
+tags: ruby
+identifier: did_you_know_ruby_unicode_and_string_literals
+---
+
+Let's have some fun with some **Unicode chars**  and **Heredoc Strings**.
+
+{% gist robertodecurnex/f75560003662589934db smile %}
+
+h2. Variable Names
+
+Ruby <notextile>has some pretty relaxed rules over the names of <b>local variables</b>. Basically these names can start with a letter (<code>a-z</code>, <code>A-Z</code>), an <b>underscore</b> (<code>_</code>) or ANY <b>Unicode char</b> not included in <b>ASCII</b> (<code>&#x1F601;</code>, <code>&#x1F610;</code>, <code>&#x1F618;</code>, <code>&#x2708;</code>, <code>&#x0037;&#x20E3;</code>, <code>&#x2648;</code>). For the following chars you can also include numbers (<code>0-9</code>).</notextile>
+
+<small><b>Note:</b> An <b>underscore</b> as the first char will change the way the variable behaves, such like how <code>@</code>, <code>@@</code> and <code>$</code> make them instance, class, and global variables respectively, <code>_</code> will suppress duplicate argument errors. <code>_</code> by itself will be also overwritten after each sentence with the value of the last eval.</small>
+
+{% gist robertodecurnex/f75560003662589934db unicodes.rb %}
+
+h2. Method Names
+
+Methods naming rules are _almost_ the same. On top of the local variable rules you can add a <code>?</code> or a <code>!</code> at the end of the name, commonly used to denote a boolean response or an internal modification of the object instance respectively. Over the time the bang (<code>!</code>) have also been used to distinguish methods that would fail silently form methods that would raise exceptions under the same circumstances.
+
+You can also define/redefine most of the operators (<code>+</code>, <code>-</code>, <notextile><code>&gt;</code></notextile>, <code>==</code>) and some other weird unary operators such as <code>-@</code>. It's a long discussion so we may cover that later. 
+
+<small>Note: (From "@the_zenspider Ruby QuikRef":http://www.zenspider.com/Languages/Ruby/QuickRef.html) _"1.9 has a horrible extension to allow you to define !=, !~, !, and not. A special place in hell is reserved for you if you define any of these."_</small>
+
+{% gist robertodecurnex/f75560003662589934db smile.rb %}
+
+h2. Heredoc Strings
+
+As many other <b>Ruby</b> features our <b>Heredoc</b> strings are <b>Perl</b> inspired, though they behave much more like the <b>Unix Shell Heredocs</b> sometimes. 
+
+The basic usage implies an opening in the form of <notextile><code>&lt;&lt;HERE_DOC_ID</code></notextile> followed by a new line. Following lines will hold the string itself (new lines included) until a the first line starting with the same <code>HERE_DOC_ID</code>.
+
+{% gist robertodecurnex/f75560003662589934db heredoc %}
+
+<small><b>Tip:</b> By default the closing <code>HERE_DOC_ID</code> must be at the beginning of the line. This constraint can be ignored, to enable indentation, by adding a <code>-</code> right before the opening <code>HERE_DOC_ID</code> (<notextile><code>&lt;&lt;-HERE_DOC_ID</code></notextile>).</small>
+
+Now, Ruby let's you chain things and execute multiple sentences in the same line of the opening <code>HERE_DOC_ID</code> (even using <code>;</code>). Those operations can include the definition of more <b>Heredocs</b>. Their bodies can then be defined, keeping a left to right order, in the following lines, closing them one at the time. Basically the <notextile><code>&lt;&lt;HERE_DOC_ID</code></notextile> works as some sort of constant, holding the string defined below.
+
+{% gist robertodecurnex/f75560003662589934db heredoc_operations %}
+
+h2. How about you?
+
+Have you find useful/fun usages for them? 
+
+Share them below! I would love to hear your stories.
+
