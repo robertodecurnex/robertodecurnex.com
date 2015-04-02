@@ -8,9 +8,31 @@ tags: ruby
 identifier: did_you_know_ruby_unicode_and_string_literals
 ---
 
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@robertodecurnex" />
+<meta name="twitter:title" content="Did you know Ruby? (Unicode and Heredoc Strings)" />
+<meta name="twitter:description" content=" - A quick overview of Unicode chars and Heredocs in Ruby" />
+<meta name="twitter:url" content="http://robertodecurnex.com{{page.url}}" />
+
 Let's have some fun with some **Unicode chars**  and **Heredoc Strings**.
 
 {% gist robertodecurnex/f75560003662589934db smile %}
+<notextile>
+  <noscript>
+    <pre class="line-pre"><div class="line" id="file-smile-LC1"># encoding: UTF-8
+    </div><div class="line" id="file-smile-LC2">&nbsp;
+    </div><div class="line" id="file-smile-LC3">&#x1F601; = 'smile'
+    </div><div class="line" id="file-smile-LC4">&nbsp;
+    </div><div class="line" id="file-smile-LC5">&lt;&lt;LETS[0..-2] + &#x1F601; + &lt;&lt;FACE
+    </div><div class="line" id="file-smile-LC6">Let's put a 
+    </div><div class="line" id="file-smile-LC7">LETS
+    </div><div class="line" id="file-smile-LC8"> on that face
+    </div><div class="line" id="file-smile-LC9">FACE
+    </div><div class="line" id="file-smile-LC10">&nbsp;
+    </div><div class="line" id="file-smile-LC11">#=&gt; "Let's put a smile on that face"
+    </div></pre>
+  </noscript>
+</notextile>
 
 h2. Variable Names
 
@@ -19,6 +41,18 @@ Ruby <notextile>has some pretty relaxed rules over the names of <b>local variabl
 <small><b>Note:</b> An <b>underscore</b> as the first char will change the way the variable behaves, such like how <code>@</code>, <code>@@</code> and <code>$</code> make them instance, class, and global variables respectively, <code>_</code> will suppress duplicate argument errors. <code>_</code> by itself will be also overwritten after each sentence with the value of the last eval.</small>
 
 {% gist robertodecurnex/f75560003662589934db unicodes.rb %}
+<notextile>
+  <noscript>
+    <pre class="line-pre"><div class="line" id="file-unicodes-rb-LC1">&#x1F638; <span class="pl-k">=</span> <span class="pl-s1"><span class="pl-pds">'</span>cat<span class="pl-pds">'</span></span>
+    </div><div class="line" id="file-unicodes-rb-LC2">&#x2744; <span class="pl-k">=</span> <span class="pl-s1"><span class="pl-pds">'</span>snowflake<span class="pl-pds">'</span></span>
+    </div><div class="line" id="file-unicodes-rb-LC3">&#x00A9; <span class="pl-k">=</span> <span class="pl-s1"><span class="pl-pds">'</span>copyright<span class="pl-pds">'</span></span>
+    </div><div class="line" id="file-unicodes-rb-LC4">&#x0037;&#x20E3; <span class="pl-k">=</span> <span class="pl-c1">7</span>
+    </div><div class="line" id="file-unicodes-rb-LC5">&#x0037;&#x20E3; <span class="pl-k">=</span> <span class="pl-c1">3</span>
+    </div><div class="line" id="file-unicodes-rb-LC6"> 
+    </div><div class="line" id="file-unicodes-rb-LC7">&#x0037;&#x20E3; <span class="pl-k">+</span> &#x0033;&#x20E3; <span class="pl-c">#=&gt; 10</span>
+    </div></pre>
+  </noscript>
+</notextile>
 
 h2. Method Names
 
@@ -29,6 +63,23 @@ You can also define/redefine most of the operators (<code>+</code>, <code>-</cod
 <small>Note: (From "@the_zenspider Ruby QuikRef":http://www.zenspider.com/Languages/Ruby/QuickRef.html) _"1.9 has a horrible extension to allow you to define !=, !~, !, and not. A special place in hell is reserved for you if you define any of these."_</small>
 
 {% gist robertodecurnex/f75560003662589934db smile.rb %}
+<notextile>
+  <noscript>
+    <pre class="line-pre"><div class="line" id="file-smile-rb-LC1"><span class="pl-k">def</span> &#x1F601;
+    </div><div class="line" id="file-smile-rb-LC2">  puts <span class="pl-s1"><span class="pl-pds">"</span>Smile!<span class="pl-pds">"</span></span>
+    </div><div class="line" id="file-smile-rb-LC3"><span class="pl-k">end</span>
+    </div><div class="line" id="file-smile-rb-LC4">&nbsp;
+    </div><div class="line" id="file-smile-rb-LC5">&#x1F601; <span class="pl-c">#=&gt; Smile!</span>
+    </div><div class="line" id="file-smile-rb-LC6">&nbsp;
+    </div><div class="line" id="file-smile-rb-LC7"><span class="pl-c">#Some Valid Method Names</span>
+    </div><div class="line" id="file-smile-rb-LC8"><span class="pl-c"># &#176;</span>
+    </div><div class="line" id="file-smile-rb-LC9"><span class="pl-c"># +</span>
+    </div><div class="line" id="file-smile-rb-LC10"><span class="pl-c"># &#x1F638;</span>
+    </div><div class="line" id="file-smile-rb-LC11"><span class="pl-c"># -@</span>
+    </div><div class="line" id="file-smile-rb-LC12"><span class="pl-c"># ~</span>
+    </div></pre>
+  </noscript>
+</notextile>
 
 h2. Heredoc Strings
 
@@ -37,12 +88,58 @@ As many other <b>Ruby</b> features our <b>Heredoc</b> strings are <b>Perl</b> in
 The basic usage implies an opening in the form of <notextile><code>&lt;&lt;HERE_DOC_ID</code></notextile> followed by a new line. Following lines will hold the string itself (new lines included) until a the first line starting with the same <code>HERE_DOC_ID</code>.
 
 {% gist robertodecurnex/f75560003662589934db heredoc %}
+<notextile>
+  <noscript>
+    <pre class="line-pre"><div class="line" id="file-heredoc-LC1">puts &lt;&lt;THIS_IS_A_HEREDOC
+    </div><div class="line" id="file-heredoc-LC2">  And this is the content of the herecod.
+    </div><div class="line" id="file-heredoc-LC3">  It's obviously multi-line.
+    </div><div class="line" id="file-heredoc-LC4">  And it's great for creating help messages and things like that.
+    </div><div class="line" id="file-heredoc-LC5">THIS_IS_A_HEREDOC
+    </div><div class="line" id="file-heredoc-LC6">&nbsp;
+    </div><div class="line" id="file-heredoc-LC7">#=&gt; And this is the content of the herecod.
+    </div><div class="line" id="file-heredoc-LC8"># It's obviously multi-line.
+    </div><div class="line" id="file-heredoc-LC9"># And it's great for creating help messages and things like that.
+    </div></pre>
+  </noscript>
+</notextile>
 
 <small><b>Tip:</b> By default the closing <code>HERE_DOC_ID</code> must be at the beginning of the line. This constraint can be ignored, to enable indentation, by adding a <code>-</code> right before the opening <code>HERE_DOC_ID</code> (<notextile><code>&lt;&lt;-HERE_DOC_ID</code></notextile>).</small>
 
 Now, Ruby let's you chain things and execute multiple sentences in the same line of the opening <code>HERE_DOC_ID</code> (even using <code>;</code>). Those operations can include the definition of more <b>Heredocs</b>. Their bodies can then be defined, keeping a left to right order, in the following lines, closing them one at the time. Basically the <notextile><code>&lt;&lt;HERE_DOC_ID</code></notextile> works as some sort of constant, holding the string defined below.
 
 {% gist robertodecurnex/f75560003662589934db heredoc_operations %}
+<notextile>
+  <noscript>
+    <pre class="line-pre"><div class="line" id="file-heredoc_operations-LC1">&lt;&lt;DOWNCASE.upercase
+    </div><div class="line" id="file-heredoc_operations-LC2">  lowercase to uppercase
+    </div><div class="line" id="file-heredoc_operations-LC3">DOWNCASE
+    </div><div class="line" id="file-heredoc_operations-LC4">&nbsp;
+    </div><div class="line" id="file-heredoc_operations-LC5">#=&gt; "LOWERCASE TO UPPERCASE"
+    </div><div class="line" id="file-heredoc_operations-LC6">&nbsp;
+    </div><div class="line" id="file-heredoc_operations-LC7">&lt;&lt;FIRST + &lt;&lt;SECOND
+    </div><div class="line" id="file-heredoc_operations-LC8">  One
+    </div><div class="line" id="file-heredoc_operations-LC9">FIRST
+    </div><div class="line" id="file-heredoc_operations-LC10">  Two
+    </div><div class="line" id="file-heredoc_operations-LC11">SECOND
+    </div><div class="line" id="file-heredoc_operations-LC12">&nbsp;
+    </div><div class="line" id="file-heredoc_operations-LC13">#=&gt; "  One\n  Two\n"
+    </div><div class="line" id="file-heredoc_operations-LC14">&nbsp;
+    </div><div class="line" id="file-heredoc_operations-LC15">puts &lt;&lt;ORIGINAL.sub(&lt;&lt;MATCH, &lt;&lt;SUBSTITUTION)
+    </div><div class="line" id="file-heredoc_operations-LC16">  This is the original string.
+    </div><div class="line" id="file-heredoc_operations-LC17">  I would want to change this line.
+    </div><div class="line" id="file-heredoc_operations-LC18">  This is neat.
+    </div><div class="line" id="file-heredoc_operations-LC19">ORIGINAL
+    </div><div class="line" id="file-heredoc_operations-LC20">  I would want to change this line.
+    </div><div class="line" id="file-heredoc_operations-LC21">MATCH
+    </div><div class="line" id="file-heredoc_operations-LC22">  Modified by #sub.
+    </div><div class="line" id="file-heredoc_operations-LC23">SUBSTITUTION
+    </div><div class="line" id="file-heredoc_operations-LC24">&nbsp;
+    </div><div class="line" id="file-heredoc_operations-LC25">#=&gt;   This is the original string.
+    </div><div class="line" id="file-heredoc_operations-LC26">#     Modified by #sub.
+    </div><div class="line" id="file-heredoc_operations-LC27">#     This is neat.
+    </div></pre>
+  </noscript>
+</notextile>
 
 h2. How about you?
 
