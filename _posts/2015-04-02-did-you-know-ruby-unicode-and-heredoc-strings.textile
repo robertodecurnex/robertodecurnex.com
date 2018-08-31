@@ -4,7 +4,7 @@ disqus_title: Did you know Ruby? (Unicode and Heredoc Strings)
 layout: post
 keywords: ruby, unicode, ruby strings, ruby here document, ruby here document strings
 meta_desc: did you know ruby? (unicode and ruby here documents strings) - having fun with unicode chars and here document strings.
-tags: ruby
+meta_tags: ruby
 identifier: did_you_know_ruby_unicode_and_string_literals
 ---
 
@@ -24,7 +24,7 @@ Let's have some fun with some **Unicode chars**  and **Heredoc Strings**.
     </div><div class="line" id="file-smile-LC3">&#x1F601; = 'smile'
     </div><div class="line" id="file-smile-LC4">&nbsp;
     </div><div class="line" id="file-smile-LC5">&lt;&lt;LETS[0..-2] + &#x1F601; + &lt;&lt;FACE
-    </div><div class="line" id="file-smile-LC6">Let's put a 
+    </div><div class="line" id="file-smile-LC6">Let's put a
     </div><div class="line" id="file-smile-LC7">LETS
     </div><div class="line" id="file-smile-LC8"> on that face
     </div><div class="line" id="file-smile-LC9">FACE
@@ -48,7 +48,7 @@ Ruby <notextile>has some pretty relaxed rules over the names of <b>local variabl
     </div><div class="line" id="file-unicodes-rb-LC3">&#x00A9; <span class="pl-k">=</span> <span class="pl-s1"><span class="pl-pds">'</span>copyright<span class="pl-pds">'</span></span>
     </div><div class="line" id="file-unicodes-rb-LC4">&#x0037;&#x20E3; <span class="pl-k">=</span> <span class="pl-c1">7</span>
     </div><div class="line" id="file-unicodes-rb-LC5">&#x0037;&#x20E3; <span class="pl-k">=</span> <span class="pl-c1">3</span>
-    </div><div class="line" id="file-unicodes-rb-LC6"> 
+    </div><div class="line" id="file-unicodes-rb-LC6">
     </div><div class="line" id="file-unicodes-rb-LC7">&#x0037;&#x20E3; <span class="pl-k">+</span> &#x0033;&#x20E3; <span class="pl-c">#=&gt; 10</span>
     </div></pre>
   </noscript>
@@ -58,7 +58,7 @@ h2. Method Names
 
 Methods naming rules are _almost_ the same. On top of the local variable rules you can add a <code>?</code> or a <code>!</code> at the end of the name, commonly used to denote a boolean response or an internal modification of the object instance respectively. Over the time the bang (<code>!</code>) have also been used to distinguish methods that would fail silently form methods that would raise exceptions under the same circumstances.
 
-You can also define/redefine most of the operators (<code>+</code>, <code>-</code>, <notextile><code>&gt;</code></notextile>, <code>==</code>) and some other weird unary operators such as <code>-@</code>. It's a long discussion so we may cover that later. 
+You can also define/redefine most of the operators (<code>+</code>, <code>-</code>, <notextile><code>&gt;</code></notextile>, <code>==</code>) and some other weird unary operators such as <code>-@</code>. It's a long discussion so we may cover that later.
 
 <small>Note: (From "@the_zenspider Ruby QuikRef":http://www.zenspider.com/Languages/Ruby/QuickRef.html) _"1.9 has a horrible extension to allow you to define !=, !~, !, and not. A special place in hell is reserved for you if you define any of these."_</small>
 
@@ -83,7 +83,7 @@ You can also define/redefine most of the operators (<code>+</code>, <code>-</cod
 
 h2. Heredoc Strings
 
-As many other <b>Ruby</b> features our <b>Heredoc</b> strings are <b>Perl</b> inspired, though they behave much more like the <b>Unix Shell Heredocs</b> sometimes. 
+As many other <b>Ruby</b> features our <b>Heredoc</b> strings are <b>Perl</b> inspired, though they behave much more like the <b>Unix Shell Heredocs</b> sometimes.
 
 The basic usage implies an opening in the form of <notextile><code>&lt;&lt;HERE_DOC_ID</code></notextile> followed by a new line. Following lines will hold the string itself (new lines included) until a the first line starting with the same <code>HERE_DOC_ID</code>.
 
@@ -143,7 +143,7 @@ Now, Ruby let's you chain things and execute multiple sentences in the same line
 
 h2. How about you?
 
-Have you find useful/fun usages for them? 
+Have you find useful/fun usages for them?
 
 Share them below! I would love to hear your stories.
 

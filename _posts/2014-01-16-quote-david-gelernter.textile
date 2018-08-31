@@ -2,7 +2,7 @@
 title: Quote - David Gelernter
 disqus_title: Quote - David Gelernter
 layout: post
-tags: quote, david&nbsp;gelernter
+meta_tags: quote, david&nbsp;gelernter
 keywords: quote, davidgelernter, david gelernter
 meta_desc: Quote by David Gelernter.
 identifier: quote_david_gelernter_1

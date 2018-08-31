@@ -2,8 +2,8 @@
 title: Quote - Giorgio  Moroder
 disqus_title: Quote - Giorgio Moroder
 layout: post
-tags: quote, giorgio&nbsp;moroder
-keywords: quote, giorgiomoroder, giorgio moroder 
+meta_tags: quote, giorgio&nbsp;moroder
+keywords: quote, giorgiomoroder, giorgio moroder
 meta_desc: Quote by Giorgio Moroder.
 identifier: quote_giorgio_moroder_1
 ---
@@ -12,7 +12,7 @@ h2. The Quotes and Me
 
 I'm a quotes lover. I still got stunned whenever my mind clicks and a whole new world of thinking gets borned from just 3 or 4 lines of text.
 
-Over the past few years I've been trying to find a way to share the quotes I've found across books, songs or any other media without success. 
+Over the past few years I've been trying to find a way to share the quotes I've found across books, songs or any other media without success.
 
 *Facebook:* It's facebook... I'm ok with people using it but quotes are meant to live forever and FB just cares about tranding last minute posts.
 
@@ -20,7 +20,7 @@ Over the past few years I've been trying to find a way to share the quotes I've 
 
 *Google+:* "If a post falls in Google+ does it make a sound?". It don't, there's no one around to hear it.
 
-So let's try this. It have worked for "(tblank)Signal vs. Noise":http://37signals.com/svn/ for a long time and I have felt confortable reading their quotes from there. 
+So let's try this. It have worked for "(tblank)Signal vs. Noise":http://37signals.com/svn/ for a long time and I have felt confortable reading their quotes from there.
 
 h2. Quote
 

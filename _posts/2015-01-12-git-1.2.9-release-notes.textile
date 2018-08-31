@@ -4,7 +4,7 @@ disqus_title: git 1.2.9 - Release Notes
 layout: post
 keywords: git, ruby-git, git 1.2.9, ruby-git 1.2.9, git release notes, git gem, ruby-git gem
 meta_desc: git 1.2.9 release notes.
-tags: git, release_notes
+meta_tags: git, release_notes
 identifier: git-1.2.9_release-notes
 ---
 
@@ -22,7 +22,7 @@ Git.configure do |config|
 end
 {% endhighlight %}
 
-  * Adding <code>Git.ls_remote</code> 
+  * Adding <code>Git.ls_remote</code>
     ** <code>Git.ls_remote(repo_path_or_url) # Defaulting to '.'</code>
 
   * Adding <code>Git.describe</code>
@@ -47,7 +47,7 @@ end
     ** Commands were leaving the <code>ENV</code> modified affecting the code running over the same proc. New we set and reset those values right before/after running the command. A Mutex has also been added to prevent concurrent commands to get affected
 
   * Improving thrade safety (using <code>--git-dir</code> and <code>--work-tree</code> git opts)
-    ** Instead of move the current directory we are new using the Git opts. 
+    ** Instead of move the current directory we are new using the Git opts.
 
   * Improving <code>Git::Object::Tag</code>. Adding annotated?, tagger and message
     ** We were trating all tags the same. Now annotated tags will responde return a <code>message</code> and a <code>tagger</code> (a <code>Git::Author</code> instance). Normal tags will just return nil.
@@ -60,14 +60,14 @@ end
     ** -b
 
   * <code>Git.clone</code>
-    ** --branch 
+    ** --branch
 
   * <code>Git.fetch</code>
-    ** --prune 
+    ** --prune
 
 h2. Contributors
 
-  Thank you so much for all your contributions. 
+  Thank you so much for all your contributions.
 
   * "(tblank)adamhooper":https://github.com/adamhooper
   * "(tblank)apachelogger":https://github.com/apachelogger
@@ -78,7 +78,7 @@ h2. Contributors
   * "(tblank)othatbrian":https://github.com/othatbrian
   * "(tblank)thomasbiddle":https://github.com/thomasbiddle
 
-Are you having any problem with the "(tblank)gem":https://github.com/schacon/ruby-git ? 
+Are you having any problem with the "(tblank)gem":https://github.com/schacon/ruby-git ?
 
 Is there any feature you would love to be included?
 

@@ -4,11 +4,11 @@ disqus_title: rack-jsonp-middleware 0.0.8 - Release Notes
 layout: post
 keywords: rack-jsonp-middleware, rack-jsonp-middleware 0.0.8, rack jsonp, rack-jsonp-middleware release notes, rack-jsonp-middleware gem, jsonp gem
 meta_desc: rack-jsonp-middleware 0.0.8 release notes.
-tags: rack-jsonp-middleware, release_notes
+meta_tags: rack-jsonp-middleware, release_notes
 identifier: rack-jsonp-middleware-0.0.8_release-notes
 ---
 
-Adding JRuby support and being polite with "(tblank)Grape":http://rdoc.info/github/intridea/grape . 
+Adding JRuby support and being polite with "(tblank)Grape":http://rdoc.info/github/intridea/grape .
 
 h2. 0.0.8 Release Notes
 
@@ -16,15 +16,15 @@ h2. 0.0.8 Release Notes
 
 Requiring @pathname@ made the trick.
 
-"(tblank)joelmats":https://github.com/joelmats found out that we were not being kind with "(tblank)Grape":http://rdoc.info/github/intridea/grape . 
+"(tblank)joelmats":https://github.com/joelmats found out that we were not being kind with "(tblank)Grape":http://rdoc.info/github/intridea/grape .
 
-Turns out that "(tblank)Grape":http://rdoc.info/github/intridea/grape was storing the @headers['Content-Type']@ string and using it later. 
-Since we were using @sub!@ we were not just changing the header value but the string used later by "(tblank)Grape":http://rdoc.info/github/intridea/grape. 
-The usage of @sub@ instead (plus the the asignation of the new string) was enough. 
+Turns out that "(tblank)Grape":http://rdoc.info/github/intridea/grape was storing the @headers['Content-Type']@ string and using it later.
+Since we were using @sub!@ we were not just changing the header value but the string used later by "(tblank)Grape":http://rdoc.info/github/intridea/grape.
+The usage of @sub@ instead (plus the the asignation of the new string) was enough.
 
 h2. How about you?
 
-Are you having any problem with the "(tblank)gem":https://github.com/robertodecurnex/rack-jsonp-middleware ? 
+Are you having any problem with the "(tblank)gem":https://github.com/robertodecurnex/rack-jsonp-middleware ?
 
 Is there any feature you would love to be included?
 

@@ -4,7 +4,7 @@ disqus_title: git 1.2.7 - Release Notes
 layout: post
 keywords: git, ruby-git, git 1.2.7, ruby-git 1.2.7, git release notes, git gem, ruby-git gem
 meta_desc: git 1.2.7 release notes.
-tags: git, release_notes
+meta_tags: git, release_notes
 identifier: git-1.2.7_release-notes
 ---
 
@@ -27,7 +27,7 @@ h2. 1.2.7 Release Notes
 
 h2. Contributors
 
-  Thank you so much for all your contributions. 
+  Thank you so much for all your contributions.
 
   * "(tblank)bsedat":https://github.com/bsedat
   * "(tblank)cwalsh":https://github.com/cwalsh
@@ -36,7 +36,7 @@ h2. Contributors
   * "(tblank)ohtake":https://github.com/ohtake
   * "(tblank)swimminschrage":https://github.com/swimminschrage
 
-Are you having any problem with the "(tblank)gem":https://github.com/schacon/ruby-git ? 
+Are you having any problem with the "(tblank)gem":https://github.com/schacon/ruby-git ?
 
 Is there any feature you would love to be included?
 

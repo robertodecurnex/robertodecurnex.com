@@ -1,3 +1,6 @@
 highlighter: true
 exclude: [vendor]
 encoding: utf-8
+plugins:
+  - jekyll-gist
+  - jekyll-textile-converter

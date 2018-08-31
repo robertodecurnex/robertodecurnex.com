@@ -1,9 +1,11 @@
 source 'https://rubygems.org'
 
-ruby '2.1.2'
+ruby '2.5.1'
 
 gem 'RedCloth'
-gem 'jekyll', '< 2'
+gem 'jekyll'
+gem 'jekyll-gist'
+gem 'jekyll-textile-converter'
 gem 'newrelic_rpm'
 gem 'puma'
 gem 'rack-jekyll'

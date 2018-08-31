@@ -4,7 +4,7 @@ disqus_title: rack-jsonp-middleware 0.0.7 - Release Notes
 layout: post
 keywords: rack-jsonp-middleware, rack-jsonp-middleware 0.0.7, rack jsonp, rack-jsonp-middleware release notes, rack-jsonp-middleware gem, jsonp gem
 meta_desc: rack-jsonp-middleware 0.0.7 release notes.
-tags: rack-jsonp-middleware, release_notes
+meta_tags: rack-jsonp-middleware, release_notes
 identifier: rack-jsonp-middleware-0.0.7_release-notes
 ---
 
@@ -21,7 +21,7 @@ h2. 0.0.7 Release Notes
 
 "(tblank)mzsanford":https://github.com/mzsanford has added @callback@ sanitation methods to prevent *XSS attacks*.
 
-Basically we are only allowing @callbacks@ to be valid JS function names and preventing JS code blocks to be used instead. 
+Basically we are only allowing @callbacks@ to be valid JS function names and preventing JS code blocks to be used instead.
 
 The main risk of let the @callback@ be a chunk of JS code is that the user may access/edit our cookies or create a whole page with our signature (eg: phishing forms).
 
@@ -35,18 +35,18 @@ h2. 0.0.6 Release Notes
 
 When sending multibyte characters this is not true so we ended up having a smaller @Content-Length@ => loosing some trailing characters.
 
-It was solved by computing the lenght based on the bytesize of each character. 
+It was solved by computing the lenght based on the bytesize of each character.
 
 
-*2)* Since the original @Content-Type@ of the response is @application/json@ we are overwriting it with @application/javascript@. 
+*2)* Since the original @Content-Type@ of the response is @application/json@ we are overwriting it with @application/javascript@.
 
-Turn out that the @Content-Type@ may hold the type and the encoding, and we were not saving the encoding. 
+Turn out that the @Content-Type@ may hold the type and the encoding, and we were not saving the encoding.
 
 Now we are just replacing the @application/json@ with @application/javascript@ and leaving the rest of the @Content-Type@ untouched.
 
 h2. How about you?
 
-Are ou having any problem with the "(tblank)gem":https://github.com/robertodecurnex/rack-jsonp-middleware ? 
+Are ou having any problem with the "(tblank)gem":https://github.com/robertodecurnex/rack-jsonp-middleware ?
 
 Is there any feature you would love to be included?
 

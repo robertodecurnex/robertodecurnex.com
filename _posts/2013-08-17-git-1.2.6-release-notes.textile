@@ -4,13 +4,13 @@ disqus_title: git 1.2.6 - Release Notes
 layout: post
 keywords: git, ruby-git, git 1.2.6, ruby-git 1.2.6, git release notes, git gem, ruby-git gem
 meta_desc: git 1.2.6 release notes.
-tags: git, release_notes
+meta_tags: git, release_notes
 identifier: git-1.2.6_release-notes
 ---
 
 h2. Overview
 
-Adding support to Ruby 1.9.x/2.0, JRuby 1.8/1.9 and Rubinius.  
+Adding support to Ruby 1.9.x/2.0, JRuby 1.8/1.9 and Rubinius.
 Supporting more commands and options.
 
 h2. 1.2.6 Release Notes
@@ -23,7 +23,7 @@ h2. 1.2.6 Release Notes
     ** --config
   * Git.log methods
     ** []
-    ** last 
+    ** last
   * Git.add_remote options
     ** -f
     ** -t
@@ -31,20 +31,20 @@ h2. 1.2.6 Release Notes
     ** --force
   * Git.init options
     ** --bare
-  * Git.commit options 
+  * Git.commit options
     ** --all
     ** --amend
-  * Added Git.remote_remote, Git.revert and Git.clean 
+  * Added Git.remote_remote, Git.revert and Git.clean
   * Added Bundler to the formula
-  * Travis configuration 
+  * Travis configuration
   * Licence included with the gem
 
 h2. Contributors
 
-  Thank you so much for all your contributions. 
+  Thank you so much for all your contributions.
 
   * "(tblank)agius":https://github.com/agius
-  * "(tblank)AlekSi":https://github.com/AlekSi 
+  * "(tblank)AlekSi":https://github.com/AlekSi
   * "(tblank)alexspeller":https://github.com/alexspeller
   * "(tblank)anapsix":https://github.com/anapsix
   * "(tblank)bcardarella":https://github.com/bcardarella
@@ -63,7 +63,7 @@ h2. Contributors
   * "(tblank)kaelin":https://github.com/kaelin
   * "(tblank)kkrol89":https://github.com/kkrol89
   * "(tblank)marcomorain":https://github.com/marcomorain
-  * "(tblank)mikemallete":https://github.com/mikemallete 
+  * "(tblank)mikemallete":https://github.com/mikemallete
   * "(tblank)mohitesethi":https://github.com/mohitsethi
   * "(tblank)mrVanDalo":https://github.com/mrVanDalo
   * "(tblank)petedmarsh":https://github.com/petedmarsh
@@ -77,7 +77,7 @@ h2. Contributors
 
 
 
-Are you having any problem with the "(tblank)gem":https://github.com/schacon/ruby-git ? 
+Are you having any problem with the "(tblank)gem":https://github.com/schacon/ruby-git ?
 
 Is there any feature you would love to be included?
 

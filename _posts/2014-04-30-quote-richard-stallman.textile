@@ -2,7 +2,7 @@
 title: Quote - Richard Stallman
 disqus_title: Quote - Richard Stallman
 layout: post
-tags: quote, richard&nbsp;stallman
+meta_tags: quote, richard&nbsp;stallman
 keywords: quote, richardstallman, richard stallman
 meta_desc: Quote by Richard Stallman.
 identifier: quote_richard_stallman_1

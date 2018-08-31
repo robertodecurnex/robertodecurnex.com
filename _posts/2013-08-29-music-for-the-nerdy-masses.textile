@@ -4,7 +4,7 @@ disqus_title: Music for the nerdy masses - Kill Dash Nine by Mozy
 layout: post
 keywords: music, kill dash nine, monzy, geek music, nerdy music, nerd music, song, nerdy song, nerd song, geek song
 meta_desc: Another nerdy music video (Kill Dash Nine by Monzy).
-tags: nerdy_music
+meta_tags: nerdy_music
 identifier: music-for-the-nerdy-masses-1
 ---
 

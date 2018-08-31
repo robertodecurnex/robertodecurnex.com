@@ -4,21 +4,21 @@ disqus_title: REISUB to the rescue
 layout: post
 keywords: linux, reisub, rseiub, ubuntu, restart linux, restart ubuntu, linux hard shutdown, ubuntu hard shutdown
 meta_desc: REISUB, the best way to restart your non-respoinsive linux.
-tags: linux, ubuntu, reisub
+meta_tags: linux, ubuntu, reisub
 identifier: reisub_to_the_rescue
 ---
 
 h2. **REISUB** to the rescue
 
-Since Ubunut 12.04 most of us have been having problems with our machines, they got completely tilt randomly, all the time for some of us, once in a while for others. Everything was so fucked up that not even <code>Ctrl</code> + <code>Alt</code> + <code>F1</code> (or the FX you like the most) was working, nor the power button associated action (reboot or shutdown). 
+Since Ubunut 12.04 most of us have been having problems with our machines, they got completely tilt randomly, all the time for some of us, once in a while for others. Everything was so fucked up that not even <code>Ctrl</code> + <code>Alt</code> + <code>F1</code> (or the FX you like the most) was working, nor the power button associated action (reboot or shutdown).
 
 Common solution: Hold your power button for ~7 seconds, look how your machine power goes off and how everything got violently halt. "Oh no, poor processes! Oh god, protect my hard drives! The buffer... My services... What a mess!"
 
-Do not panic, **REISUB** came to the rescue. 
+Do not panic, **REISUB** came to the rescue.
 
 h2. What is it?
 
-**REISUB** can be described as a gentle reboot process. It's name represent the keys involved and the order in which they must be pressed. 
+**REISUB** can be described as a gentle reboot process. It's name represent the keys involved and the order in which they must be pressed.
 
 There's a rule to remember these letters, _**"Raising Skinny Elephants Is Utterly Boring"**_. Personally, I find easier to remember just **REISUB** as a weird word.
 
@@ -34,7 +34,7 @@ h2. How it works?
 
 <code>R</code> Switch the keyboard from raw mode to XLATE mode.
 
-<code>E</code> Send the SIGTERM signal to all processes except PID 1. 
+<code>E</code> Send the SIGTERM signal to all processes except PID 1.
 
 <code>I</code> Send the SIGKILL signal to all processes except PID 1.
 
@@ -54,7 +54,7 @@ h2. W@t?
 
 <code>E</code> sends the SIGTERM, which is catched by every process and make, most of them, end their routins cleanly (close communication channels, write buffers, what ever...).
 
-<code>I</code> sends the SIGKILL, making all the processes halt violently, leaving some of the clean up routins unfinished. 
+<code>I</code> sends the SIGKILL, making all the processes halt violently, leaving some of the clean up routins unfinished.
 If you give enough time between <code>E</code> and <code>I</code> none (or just a few) processes will end dirty.
 
 <code>S</code> will sync your filesystems, writing everything that may be taking a nap in any of the buffers.

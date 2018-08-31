@@ -2,7 +2,7 @@
 title: Quote - Arthur C. Clarke
 disqus_title: Quote - Arthur C. Clarke
 layout: post
-tags: quote, arthur&nbsp;c.&nbsp;clarke
+meta_tags: quote, arthur&nbsp;c.&nbsp;clarke
 keywords: quote, arthurclarke, arthurcclarke, arthur c clarke, arthur clarke
 meta_desc: Quote by Arthur C. Clarke.
 identifier: quote_arthur_clarke_1
