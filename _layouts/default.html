@@ -15,7 +15,7 @@
     <script type="text/javascript">
       $(function(){
         kCode.listen(function(){
-          var audioDelay = 9000;   
+          var audioDelay = 9000;
           $("body").css('overflow','hidden');
           window.location.href="#";
           document.getElementById('k-code-audio').play();
@@ -25,19 +25,19 @@
             next();
           });
           $("#disqus_thread").delay(audioDelay).fadeOut();
-          $("#twitter").delay(audioDelay).fadeOut(); 
-          $("#shelfi").delay(audioDelay).fadeOut(); 
-          $(".nav").delay(audioDelay).hide("explode",{ pieces: 100 }, 2000); 
-          $(".footer").delay(audioDelay + 2000).hide("explode",{ pieces: 5 }, 1000); 
-          $(".post").delay(audioDelay + 4000).hide("explode",{ pieces: 100 }, 3000); 
-          $("#content").delay(audioDelay + 4500).fadeOut();   
+          $("#twitter").delay(audioDelay).fadeOut();
+          $("#shelfi").delay(audioDelay).fadeOut();
+          $(".nav").delay(audioDelay).hide("explode",{ pieces: 100 }, 2000);
+          $(".footer").delay(audioDelay + 2000).hide("explode",{ pieces: 5 }, 1000);
+          $(".post").delay(audioDelay + 4000).hide("explode",{ pieces: 100 }, 3000);
+          $("#content").delay(audioDelay + 4500).fadeOut();
           $(".header").delay(audioDelay + 6000).hide("explode",{ pieces: 20 }, 1000);
         });
       });
     </script>
     <script type="text/javascript">
       $(function() {
-        $("a.tblank").attr("target","_blank"); 
+        $("a.tblank").attr("target","_blank");
       })
     </script>
     <script type="text/javascript">
@@ -57,13 +57,13 @@
       <div class="header" id="main">
         <h1><a href='/'>thinking out loud [...]</a><span id="by"><small>by</small> <a href="http://twitter.com/robertodecurnex" title="Follow me on Twitter!">@robertodecurnex</a><span></h1>
       </div>
-      
+
       <div class="section" id="content">
         {{ content }}
       </div>
-    
+
       <div class="section" id="side-panel">
-    
+
         <div class="nav" id="main">
 
           <h3><a href="/about">About Me <small>[full bio &#8599;]</small></a></h3>
@@ -91,7 +91,7 @@
             <tr>
               <td class='left'><span class='dislike'>&times;</span> <strike>SVN</strike></td>
               <td class='center'><strong>&brvbar;</strong></td>
-              <td class='right'>GIT <span class='like'>&#10003;</span></td> 
+              <td class='right'>GIT <span class='like'>&#10003;</span></td>
           </table>
           <br />
           <h3>Recent Posts</h3>
@@ -100,7 +100,7 @@
               <p>
                 {% if post.title.size < 27 %}
                   <a href="{{post.url}}" title="{{post.title}}">{{ post.title }}</a>
-                {% else %} 
+                {% else %}
                   <a href="{{post.url}}" title="{{post.title}}">{{ post.title | truncate: 27 }}</a>
                 {% endif %}
               </p>
@@ -126,7 +126,7 @@
             <a href="https://github.com/schacon/ruby-git" target="_blank" title="Ruby Git client">ruby-git</a>
           </p>
           <p>
-            <a href="https://github.com/robertodecurnex/spectro" target="_blank" title="Specs driven social meta-programming">spectro</a>
+            <a href="https://spectro.app" target="_blank" title="Specs driven social meta-programming">spectro</a>
           </p>
           <p>
             <a href="/rack-jsonp-middleware" target="_blank" title="A Rack JSONP middleware">rack-jsonp-middleware</a>
@@ -149,7 +149,7 @@
           <p>
             <a href="/vigenere" target="_blank" title="Simple Vigenère Cipher ruby implementation">vigenere</a>
           </p>
- 
+
           <div id="rss-image-wrapper" style="display:none;">
             <a href="/atom.xml" target="_blank" ><img id="rss-image" src="/images/rss.png"></img></a>
           </div>
@@ -157,7 +157,7 @@
               <a href="mailto:decurnex.roberto@gmail.com"><img id="emailme-image" src="/images/emailme.png"></img></a>
           </div>
         </div>
-      
+
         <div class="section" id="twitter">
           <a class="twitter-timeline" href="https://twitter.com/robertodecurnex"
             data-theme="dark"
@@ -171,8 +171,8 @@
           </a>
           <script>
             !function(d,s,id) {
-              var js, fjs=d.getElementsByTagName(s)[0], p=/^http:/.test(d.location) ? 'http' : 'https'; 
-              
+              var js, fjs=d.getElementsByTagName(s)[0], p=/^http:/.test(d.location) ? 'http' : 'https';
+
               if(!d.getElementById(id)) {
                 js = d.createElement(s);
                 js.id = id;
