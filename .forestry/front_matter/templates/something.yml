@@ -1,0 +1,25 @@
+---
+label: Something
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: disqus_title
+  label: disqus_title
+- type: text
+  name: layout
+  label: layout
+- type: text
+  name: keywords
+  label: keywords
+- type: text
+  name: meta_desc
+  label: meta_desc
+- type: text
+  name: meta_tags
+  label: meta_tags
+- type: text
+  name: identifier
+  label: identifier
